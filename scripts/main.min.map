@@ -1,1 +1,1 @@
-{"version":3,"file":"main.min.js","sources":["main.js"],"names":["iWouldCrash","Bugsense","initAndStartSession","apiKey","console","log","setTimeout"],"mappings":"AAGA,QAASA,gBAHTC,SAASC,qBAAsBC,OAAQ,aACvCC,QAAQC,IAAI,gBAMZC,WAAWN,YAAa"}
+{"version":3,"file":"main.min.js","sources":["main.js"],"names":["iWouldCrash","lalala","Bugsense","initAndStartSession","apiKey","console","log","setTimeout"],"mappings":"AAGA,QAASA,eACPC,SAJFC,SAASC,qBAAsBC,OAAQ,aACvCC,QAAQC,IAAI,gBAMZC,WAAWP,YAAa"}
