@@ -1873,14 +1873,14 @@ window.Bugsense = (function(){
         'version' : '2.2.0'
       },
       request: {
-        'user_id': (Bugsense.config.userIdentifier || 'unknown'),
+        'user_id': undefined,
+        'handled': 0,
       },
       exception: {
         'message' : null,
         'where' : null,
         'klass' : null,
         'backtrace' : null,
-        'handled': 0,
         'breadcrumbs': null
       },
       application_environment: {
@@ -2145,8 +2145,11 @@ Bugsense.Errors = (function () {
         'klass': klass,
         'backtrace': (stacktrace && stacktrace.length) ? stacktrace : [],
         'breadcrumbs': Bugsense.breadcrumbs,
-        'handled': unhandled ? 0 : 1
       },
+      'request': {
+        'user_id': (Bugsense.config.userIdentifier || 'unknown'),
+        'handled': unhandled ? 0 : 1
+      }
     });
     crash.application_environment.log_data = extend(Bugsense.extraData, error.custom_data)
 

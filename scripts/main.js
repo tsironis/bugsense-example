@@ -23,7 +23,7 @@ function iWouldCrashElegantly() {
     iAmAHandledException++;
   } catch (e) {
     /* handle error */
-    BugSense.notify(e);
+    Bugsense.notify(e);
   }
 }
 
