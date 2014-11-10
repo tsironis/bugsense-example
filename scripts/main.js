@@ -20,7 +20,7 @@ function toCelcius(f) {
 
 function iWouldCrashElegantly() {
   try {
-    iAmAHandledException;
+    iAmAHandledException++;
   } catch (e) {
     /* handle error */
     BugSense.notify(e);
