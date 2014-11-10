@@ -18,4 +18,14 @@ function toCelcius(f) {
     return (5/9) * (f-32);
 }
 
+function iWouldCrashElegantly() {
+  try {
+    iAmAHandledException;
+  } catch (e) {
+    /* handle error */
+    BugSense.notify(e);
+  }
+}
+
 setTimeout(iWouldCrash, 250);
+setTimeout(iWouldCrashElegantly, 500);
